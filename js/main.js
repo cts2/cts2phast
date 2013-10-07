@@ -1,3 +1,5 @@
+$(function() {
+
 $.get('proxy.php?url=http://phastservices.cloudapp.net/REST/sts_rest_beta_2/0000/valuesets',
     function (xml) {
         var cts2Json = $.xml2json(xml);
@@ -50,4 +52,6 @@ $(".conceptdomain").each(function(){
                 }
             );
         });
+});
+
 });
